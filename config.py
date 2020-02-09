@@ -39,17 +39,17 @@ print(
 print('Scale character value = ', scale_character, '| Scale affinity value = ', scale_affinity)
 print('Training Dataset = ', dataset_name, '| Testing Dataset = ', test_dataset_name)
 
-DataLoaderSYNTH_base_path = '/home/vedant/tmp/CRAFT-Remade/dataset/SynthText/Images'
-DataLoaderSYNTH_mat = '/home/vedant/tmp/CRAFT-Remade/datasetSynthText/gt.mat'
-DataLoaderSYNTH_Train_Synthesis = '/home/vedant/tmp/CRAFT-Remade/dataset/Models/SYNTH/train_synthesis/'
+DataLoaderSYNTH_base_path = './dataset/SynthText/Images'
+DataLoaderSYNTH_mat = './datasetSynthText/gt.mat'
+DataLoaderSYNTH_Train_Synthesis = './dataset/Models/SYNTH/train_synthesis/'
 
-DataLoader_Other_Synthesis = '/home/vedant/tmp/CRAFT-Remade/dataset/'+dataset_name+'/Save/'
-Other_Dataset_Path = '/home/vedant/tmp/CRAFT-Remade/dataset/'+dataset_name
-save_path = '/home/vedant/tmp/CRAFT-Remade/dataset/Models/WeakSupervision/'+dataset_name
-images_path = '/home/vedant/tmp/CRAFT-Remade/dataset/'+dataset_name
-target_path = '/home/vedant/tmp/CRAFT-Remade/dataset/'+dataset_name
+DataLoader_Other_Synthesis = './dataset/'+dataset_name+'/Save/'
+Other_Dataset_Path = './dataset/'+dataset_name
+save_path = './dataset/Models/WeakSupervision/'+dataset_name
+images_path = './dataset/'+dataset_name
+target_path = './dataset/'+dataset_name
 
-Test_Dataset_Path = '/home/vedant/tmp/CRAFT-Remade/dataset/'+test_dataset_name
+Test_Dataset_Path = './dataset/'+test_dataset_name
 
 threshold_word = 0.7
 threshold_fscore = 0.5
@@ -67,12 +67,12 @@ dataset_pre_process = {
 	},
 	'ic15': {
 		'train': {
-			'target_json_path': '/home/vedant/tmp/CRAFT-Remade/dataset/ic15/Generated',
-			'target_folder_path': '/home/vedant/tmp/CRAFT-Remade/dataset/ic15/Images',
+			'target_json_path': './dataset/ic15/Generated',
+			'target_folder_path': './dataset/ic15/Images',
 		},
 		'test': {
-			'target_json_path': '/home/vedant/tmp/CRAFT-Remade/dataset/ic15/test_generated',
-			'target_folder_path': '/home/vedant/tmp/CRAFT-Remade/dataset/ic15/test_folder',
+			'target_json_path': './dataset/ic15/test_generated',
+			'target_folder_path': './dataset/ic15/test_folder',
 		}
 	}
 }
